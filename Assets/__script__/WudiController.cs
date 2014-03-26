@@ -77,11 +77,12 @@ public class WudiController : MonoBehaviour {
         run = true;
     }
 
-	public void Jump()
+	public void Jump(float scale, Vector3 dir)
 	{
 //		isJump = true;
 //		verticalSpeed = jumpSpeed;
-		rigidbody.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
+        rigidbody.velocity = Vector3.zero;
+        rigidbody.AddForce(dir * jumpSpeed * scale, ForceMode.Impulse);
 		anim.SetBool("isJump", true);
 		StartCoroutine(waitAndStopJump());
 	}

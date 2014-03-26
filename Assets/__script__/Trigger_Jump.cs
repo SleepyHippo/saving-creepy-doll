@@ -6,6 +6,9 @@ public class Trigger_Jump : MonoBehaviour {
 //	public bool isActive;
 //	public GameObject model;
 	// Use this for initialization
+    public float scale = 1.0f;
+    public Vector3 jumpDir = Vector3.up;
+    public GameObject[] objsToInactivate;
 	void Start () {
 //		model.SetActive(isActive);
 	}
@@ -19,7 +22,11 @@ public class Trigger_Jump : MonoBehaviour {
 //		if( !isActive )
 //			return;
 		if( other.tag == "Player" ){
-			other.GetComponent<WudiController>().Jump();
+            other.GetComponent<WudiController>().Jump(scale, jumpDir);
+            foreach(var obj in objsToInactivate)
+            {
+                obj.SetActive(false);
+            }
 		}
 	}
 

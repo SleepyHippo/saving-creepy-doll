@@ -15,14 +15,6 @@ public class Trigger_Bridge : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter( Collider other ) {
-		if( !isActive )
-			return;
-		if( other.tag == "Player" ){
-			other.GetComponent<WudiController>().Jump();
-		}
-	}
-
 	public void Active(bool active)
 	{
 		isActive = active;
