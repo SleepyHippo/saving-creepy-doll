@@ -20,9 +20,9 @@ public class Trigger_Bomb : MonoBehaviour {
 
     void Bomb()
     {
-        gameObject.SetActive(false);
+//        gameObject.SetActive(false);
         if( particle != null )
-            Object.Instantiate(particle, transform.position, transform.rotation);
+            particle.SetActive(true);
         foreach(var obj in objsToHide)
         {
             obj.SetActive(false);

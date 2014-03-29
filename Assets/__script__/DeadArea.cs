@@ -3,6 +3,7 @@ using System.Collections;
 
 public class DeadArea : MonoBehaviour {
 
+    public bool showWhenToggleOpen = false;
     public GameObject[] objsToShow;
     public GameObject[] objsToHide;
 	// Use this for initialization
@@ -31,5 +32,13 @@ public class DeadArea : MonoBehaviour {
                 obj.SetActive(false);
             }
         }
+    }
+
+    public void Toggle(bool toggleOpen)
+    {
+        if( showWhenToggleOpen )
+            gameObject.SetActive(toggleOpen);
+        else
+            gameObject.SetActive(!toggleOpen);
     }
 }

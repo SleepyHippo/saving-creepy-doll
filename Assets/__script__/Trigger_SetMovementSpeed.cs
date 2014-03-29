@@ -42,9 +42,9 @@ public class Trigger_SetMovementSpeed : MonoBehaviour {
         }
     }
 
-    public void Toggle()
+    public void Toggle(bool toggleOpen)
     {
-        if (Math.Abs (speed - moveSpeed) < Mathf.Epsilon)
+        if ( toggleOpen )
             speed = reversedSpeed;
         else
             speed = moveSpeed;

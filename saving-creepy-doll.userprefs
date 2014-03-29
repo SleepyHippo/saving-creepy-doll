@@ -1,16 +1,23 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\__script__\RotateSwitchBar.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\__script__\Trigger_Bomb.cs">
     <Files>
-      <File FileName="Assets\__script__\Trigger_SetMovementSpeed.cs" Line="38" Column="63" />
+      <File FileName="Assets\__script__\Trigger_ClampBridge.cs" Line="25" Column="25" />
+      <File FileName="Assets\__script__\Trigger_SetMovementSpeed.cs" Line="1" Column="1" />
       <File FileName="Assets\__script__\SelfRotating.cs" Line="1" Column="1" />
       <File FileName="Assets\__script__\Trigger_Switch.cs" Line="1" Column="1" />
-      <File FileName="Assets\NGUI\Scripts\Tweening\TweenRotation.cs" Line="1" Column="1" />
-      <File FileName="Assets\__script__\RotateSwitchBar.cs" Line="24" Column="28" />
+      <File FileName="Assets\__script__\RotateSwitchBar.cs" Line="1" Column="1" />
+      <File FileName="Assets\__script__\TriggerDropArea.cs" Line="1" Column="1" />
+      <File FileName="Assets\__script__\DeadArea.cs" Line="1" Column="1" />
+      <File FileName="Assets\__script__\ShowHideWhenToggle.cs" Line="1" Column="1" />
+      <File FileName="Assets\__script__\UIBind\MenuMap\UIMenuMap_SceneButton.cs" Line="16" Column="59" />
+      <File FileName="Assets\__script__\Trigger_Bomb.cs" Line="23" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="D:\Programming\GitRepositories\saving-creepy-doll\Assets\__script__\Trigger_ClampBridge.cs" line="25" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -15,7 +15,7 @@ public class SelfRotating : MonoBehaviour {
         transform.Rotate(axis, speed * Time.deltaTime, Space.World);
 	}
 
-    public void Toggle()
+    public void Toggle(bool toggleOpen)
     {
         speed *= -1;
     }

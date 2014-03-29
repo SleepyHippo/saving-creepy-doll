@@ -3,7 +3,6 @@ using System.Collections;
 
 public class RotateSwitchBar : MonoBehaviour {
 
-    private bool forward = true;
     private TweenRotation rotation;
 	// Use this for initialization
 	void Start () {
@@ -15,13 +14,12 @@ public class RotateSwitchBar : MonoBehaviour {
 	
 	}
 
-    public void Toggle()
+    public void Toggle(bool toggleOpen)
     {
-        if( forward )
+        if( toggleOpen )
             rotation.Play();
         else
             rotation.PlayReverse();
-        forward = !forward;
 //        Vector3 temp = rotation.from;
 //        rotation.from = rotation.to;
 //        rotation.to = temp;
